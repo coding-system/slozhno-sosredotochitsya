@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Сложно сосредоточиться</title>
-  </head>
-  <body class="page">
-    <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <script src="./scripts/script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Страница о том, почему нам так сложно сконцентрироваться"
+        />
+        <meta property="og:title" content="Cложно сосредотолчиться" />
+        <meta property="og:url" content="https://ya.ru/" />
+        <meta property="og:image" content="./images/og.jpg" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta name="color-scheme" content="dark light" />
+        <title>Сложно сосредоточиться</title>
+        <link rel="stylesheet" href="./styles/globals.css" />
+        <link rel="stylesheet" href="./styles/variables.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/dark.css" />
+        <link rel="stylesheet" href="./styles/light.css" />
+        <link rel="stylesheet" href="./fonts/fonts.css" />
+        <link rel="icon" href="./images/favicon.ico" sizes="any" />
+        <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+    </head>
+    <body class="page">
+        <div class="wrapper"></div>
+            <header class="header decorated-zone">
+                <div class="rec"></div>
+                <div class="cover"></div>
+                <div class="decorated-zone"></div>
+                <nav class="header__theme-menu">
+                    <ul class="header__theme-menu-list">
+                        <li class="header__theme-menu-item">
+                            <button
+                                class="header__theme-menu-button header__theme-menu-button_type_light"
+                            >
+                                День
+                            </button>
+                        </li>
+                        <li class="header__theme-menu-item">
+                            <button
+                                class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+                                disabled
+                            >
+                                Авто
+                            </button>
+                        </li>
+                        <li class="header__theme-menu-item">
+                            <button
+                                class="header__theme-menu-button header__theme-menu-button_type_dark"
+                            >
+                                Неон
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <script src="./scripts/script.js"></script>
+    </body>
 </html>

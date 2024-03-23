@@ -1,5 +1,69 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    background-color: var(--main-color);
+    margin: 0 auto;
+    color: var(--text-color)
+    font-family: var(--main-font);
+}
+
+.wrapper {
+    margin: 10px;
+}
+
+.header {
+    display: grid;
+    position: relative;
+    min-height: 668px;
+    min-width: 375px;
+    width: 100%;
+    height: 100%;
+}
+
+.header::before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    top: 0;
+    right: 0;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+}
+
+.header::after {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+}
+
+.rec {
+    position: absolute;
+    right: 50px;
+    top: 0;
+}
+
+.rec::before {
+    content: "Rec";
+    color: var(--accent-color);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+}
+
+.rec::after {
+    position: absolute;
+    top: 6px;
+    right: -15px;
+    content: '';
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px var(--accent-color);
+    background-color: var(--accent-color);
 }
