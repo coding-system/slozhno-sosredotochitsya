@@ -3,6 +3,11 @@
   и их переопределение под различные устройства
 */
 :root {
+    /* --bg-color: ;
+    --title-color: ;
+    --text-color: ;
+    --accent-color: ;
+    ---slogan-text-color: ; */
     --main-color: #000028;
     --title-color: #db00ff;
     --text-color: #f1b2ce;

@@ -2,59 +2,31 @@
 
 .page {
     position: relative;
-    box-sizing: border-box;
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-
-    margin: 0 auto;
-    /* padding: 10px; */
+    padding: 10px;
     background-color: var(--main-color);
     color: var(--text-color);
     font-family: var(--main-font);
     background-image: var(--cover);
-    /* opacity: .5; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
-    min-inline-size: 375px;
 }
 
 .header {
-    padding: 10px;
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
     grid-template-columns: auto;
     gap: 55px;
     position: relative;
-    width: 375px;
+    max-height: 668px;
+    height: 100%;
 }
-
-/* .header::before {
-    position: absolute;
-    content: "";
-    height: 25px;
-    width: 25px;
-    top: 0;
-    right: 0;
-    border-top: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-}
-
-.header::after {
-    position: absolute;
-    content: "";
-    height: 25px;
-    width: 25px;
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
-} */
 
 .rec {
     position: absolute;
-    right: 38px;
+    right: 28px;
     top: 0;
 }
 
@@ -83,7 +55,7 @@
 
 .decorated-zone {
     height: 100%;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     position: relative;
 }
 
@@ -93,7 +65,7 @@
     height: 25px;
     width: 25px;
     top: 0px;
-    right: 10px;
+    right: 0px;
     border-top: 1px solid var(--accent-color);
     border-right: 1px solid var(--accent-color);
 }
@@ -104,14 +76,14 @@
     height: 25px;
     width: 25px;
     bottom: -12px;
-    left: 10px;
+    left: 0px;
     border-bottom: 1px solid var(--accent-color);
     border-left: 1px solid var(--accent-color);
 }
 
 .header__theme-menu {
     justify-self: end;
-    margin-top: 54px;
+    margin-top: 64px;
 }
 
 .header__theme-menu-list {
@@ -169,5 +141,56 @@
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 18px;
+    line-height: 23.4px;
     max-height: 117px;
+}
+
+.content {
+    margin-top: 62px;
+}
+
+.content__group {
+    margin-bottom: 50px;
+}
+
+.content__item {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-columns: auto;
+}
+
+.content__title {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: var(--accent-color);
+}
+
+.content__item__title {
+    min-height: 23px;
+    margin-top: 20px;
+    background-color: var(--accent-color);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: var(--main-color);
+}
+
+.content__item__title-special {
+    font-weight: 700;
+}
+
+.content__item__text {
+    margin-top: 10px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: var(--text-color);
+}
+
+.content__item__link {
+    text-shadow: 2px 1px 0 var(--accent-color);
 }
