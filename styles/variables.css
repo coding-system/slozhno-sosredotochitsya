@@ -8,5 +8,5 @@
     --text-color: #f1b2ce;
     --accent-color: #ff0070;
     --main-font: "IBM Plex mono";
-    --cover-image: url(../images/cover-image-dark.png);
+    --cover: url(../images/cover-image-dark.png);
 }
