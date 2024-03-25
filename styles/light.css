@@ -10,3 +10,16 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+:root.thehe-light {
+    --page-bg-color: #fff1f7;
+    --main-title-color: #ffc2e6;
+    --accent-color: #ff0070;
+    --slogan-text-color: #353430;
+    --content-title-color: #353430;
+    --content-subtitle-color: #353430;
+    --content-subtitle-bg-color: #ff8dcb;
+    --content-text-color: #353430;
+    --main-font: "IBM Plex mono";
+    --cover-image: url(../images/cover-image-light);
+}
