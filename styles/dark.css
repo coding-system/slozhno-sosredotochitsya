@@ -11,7 +11,7 @@
   */
 }
 
-:root.theme-dark {
+:root .theme-dark {
     --page-bg-color: #000028;
     --main-title-color: #db00ff;
     --accent-color: #ff0070;
