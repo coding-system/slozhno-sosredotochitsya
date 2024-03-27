@@ -168,20 +168,47 @@
     margin-top: 52px;
 }
 
-.content__group {
+/* .content__group {
     width: 100%;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    gap: 10px;
+    gap: 20px;
+} */
+
+.why-group {
+    width: 100%;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.what-group {
+    width: 100%;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.how-group {
+    width: 100%;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 20px;
 }
 
 .content__text {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    gap: 10px;
+    gap: 20px;
 }
 
 .content__item {
@@ -201,10 +228,10 @@
 
 .content__item__title {
     min-height: 23px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     background-color: var(--accent-color);
     font-family: var(--main-font);
-    font-weight: 400;
+    font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
     color: var(--main-color);
@@ -215,7 +242,6 @@
 }
 
 .content__item__text {
-    /* margin-top: 10px; */
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 18px;
@@ -291,13 +317,12 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .page {
         padding: 20px;
-        inline-size: max(768px);
+        inline-size: 768px;
     }
 
     .header {
-        inline-size: 100%;
+        width: 100%;
         justify-content: space-around;
-        width: 728px;
         max-height: 1024px;
         height: fit-content;
         gap: 175px;
@@ -307,12 +332,42 @@
         margin-top: 170px;
     }
 
+    .header__title {
+    }
+
+    .header__discription-block {
+        width: 364px;
+    }
+
     .header__discription {
-        max-width: 364px;
         justify-self: end;
     }
 
     .footer {
         min-height: 984px;
+    }
+
+    .why-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .what-group {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .what-group .content__title {
+        max-width: 150px;
+    }
+
+    .content__title {
+        width: fit-content;
+    }
+
+    .content__text {
+        width: clamp(472px, 1fr);
     }
 }
