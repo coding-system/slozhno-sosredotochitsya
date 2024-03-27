@@ -283,11 +283,11 @@
 }
 
 .img__sunset {
-    grid-area: img_sunset;
+    grid-area: img__sunset;
 }
 
 .img__ice-cream {
-    grid-area: img_ice-cream;
+    grid-area: img__ice-cream;
 }
 
 .img__tape {
@@ -422,6 +422,7 @@
     }
 
     .picture__img {
-        width: auto;
+        width: fit-content;
+        object-fit: contain;
     }
 }
