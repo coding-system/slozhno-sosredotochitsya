@@ -282,26 +282,26 @@
     max-width: 100%;
 }
 
-/* 
-.img_sunset {
-
+.img__sunset {
+    grid-area: img_sunset;
 }
 
-.img_ice-cream {
-
+.img__ice-cream {
+    grid-area: img_ice-cream;
 }
 
 .img__tape {
-
+    grid-area: img__tape;
 }
 
 .img__books {
-
+    grid-area: img__books;
 }
 
 .img__street {
+    grid-area: img__street;
+}
 
-} */
 .footer {
     position: relative;
     margin-top: 50px;
@@ -407,5 +407,21 @@
 
     .content__text {
         width: clamp(472px, 1fr);
+    }
+
+    .pictures__group {
+        display: grid;
+        /* grid-template-columns: 229px 230px 229px;
+        grid-template-rows: 192px 230px 318px; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "img__sunset img__sunset img__ice-cream"
+            "img__tape img__books img__ice-cream"
+            "img__tape img__street imt__street";
+    }
+
+    .picture__img {
+        width: auto;
     }
 }
