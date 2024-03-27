@@ -2,9 +2,8 @@
 
 .page {
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-    inline-size: 375px;
+    /* inline-size: 375px; */
     position: relative;
-
     padding: 10px;
     background-color: var(--main-color);
     color: var(--text-color);
@@ -36,7 +35,7 @@
     grid-template-rows: 1fr min-content 1fr;
     grid-template-columns: auto;
     gap: 65px;
-    justify-content: space-between;
+    justify-content: center;
     /* max-height: 668px; */
     height: fit-content;
     /* height: 648px !important; */
@@ -75,7 +74,7 @@
 .decorated-zone {
     height: 100%;
     width: 100%;
-    position: relative;
+    /* position: relative; */
 }
 
 .decorated-zone::before {
@@ -170,18 +169,26 @@
 }
 
 .content__group {
+    width: 100%;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.content__text {
+    display: grid;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     gap: 10px;
 }
 
 .content__item {
     display: grid;
-    grid-template-columns: 1;
     grid-template-columns: auto;
-    /* gap: 10px; */
+    grid-template-rows: auto;
+    gap: 10px;
 }
 
 .content__title {
@@ -208,7 +215,7 @@
 }
 
 .content__item__text {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 18px;
@@ -269,7 +276,6 @@
 }
 
 .footer__title {
-    margin-top: 0px;
     font-family: var(--main-font), Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 116px;
@@ -285,12 +291,13 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .page {
         padding: 20px;
-        inline-size: 768px;
+        inline-size: max(768px);
     }
 
     .header {
         inline-size: 100%;
         justify-content: space-around;
+        width: 728px;
         max-height: 1024px;
         height: fit-content;
         gap: 175px;
