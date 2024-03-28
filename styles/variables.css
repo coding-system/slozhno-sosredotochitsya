@@ -3,26 +3,25 @@
   и их переопределение под различные устройства
 */
 :root {
-    /* --page-bg-color: #000028;
-    --main-title-color: #db00ff;
-    --accent-color: #ff0070;
-    --slogan-text-color: #000028; 
-    --content-title-color: #ff0070;
-    --content-subtitle-color: #000028;
-    --content-subtitle-bg-color: #ff0070;
-    --content-text-color: #f1b2ce;
-    --main-font: "IBM Plex mono";
-    --cover-image: url(../images/cover-image-dark.png); */
+    /* Colors */
+    --page-bg-color: var(--main-color);
+    --main-title-color: var(--primary-color);
+    --accent-color: var(--accent-color);
+    --slogan-text-color: var(--main-color);
+    --content-title-color: var(--accent-color);
+    --content-subtitle-color: var(--main-color);
+    --content-subtitle-bg-color: var(--accent-color);
+    --content-text-color: var(--secondary-color);
 
-    --main-color: #000028;
-    --title-color: #db00ff;
-    --text-color: #f1b2ce;
-    --accent-color: #ff0070;
+    /* Other */
     --main-font: "IBM Plex mono";
     --cover-image: url(../images/cover-image-dark.png);
 
-    --main-color-light: #000028;
-    --title-color-light: #db00ff;
-    --text-color-light: #f1b2ce;
-    --accent-color-light: #ff0070;
+    /* Basic vars */
+    --main-color: #000028;
+    --primary-color: #db00ff;
+    --secondary-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --main-font: "IBM Plex mono";
+    --cover-image: url(../images/cover-image-dark.png);
 }

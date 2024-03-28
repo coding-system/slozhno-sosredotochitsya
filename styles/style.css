@@ -6,7 +6,7 @@
     /* position: relative; */
     padding: 10px;
     background-color: var(--main-color);
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-family: var(--main-font);
     background-image: var(--cover-image);
     background-attachment: fixed;
@@ -148,7 +148,7 @@
     font-family: var(--main-font), Arial, Helvetica, sans-serif;
     font-size: 116px;
     text-transform: lowercase;
-    color: var(--title-color);
+    color: var(--main-title-color);
     line-height: 82.5%;
     text-shadow: 4px 4px 0 var(--accent-color);
 }
@@ -159,7 +159,7 @@
 .header__discription {
     margin-top: -9px;
     background-color: var(--accent-color);
-    color: var(--main-color);
+    color: var(--slogan-text-color);
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 18px;
@@ -248,7 +248,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
-    color: var(--main-color);
+    color: var(--content-subtitle-color);
 }
 
 .title-special {
@@ -260,7 +260,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
-    color: var(--text-color);
+    color: var(--content-text-color);
 }
 
 .content__item__link {
@@ -323,7 +323,7 @@
     font-weight: 700;
     font-size: 116px;
     text-transform: lowercase;
-    color: var(--title-color);
+    color: var(--main-title-color);
     line-height: 82.5%;
     text-shadow: 4px 4px 0 var(--accent-color);
     width: 100%;
