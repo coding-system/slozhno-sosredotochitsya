@@ -20,4 +20,9 @@
     --accent-color: #ff0070;
     --main-font: "IBM Plex mono";
     --cover-image: url(../images/cover-image-dark.png);
+
+    --main-color-light: #000028;
+    --title-color-light: #db00ff;
+    --text-color-light: #f1b2ce;
+    --accent-color-light: #ff0070;
 }
