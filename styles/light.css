@@ -12,14 +12,26 @@
 }
 
 :root .thehe-light {
-    --page-bg-color: #fff1f7;
-    --main-title-color: #ffc2e6;
-    --accent-color: #ff0070;
-    --slogan-text-color: #353430;
-    --content-title-color: #353430;
-    --content-subtitle-color: #353430;
-    --content-subtitle-bg-color: #ff8dcb;
-    --content-text-color: #353430;
+    /* Colors */
+    --page-bg-color: var(--main-color);
+    --main-title-color: var(--primary-color);
+    --accent-color: var(--basic-color);
+    --slogan-text-color: var(--main-color);
+    --content-title-color: var(--accent-color);
+    --content-subtitle-color: var(--main-color);
+    --content-subtitle-bg-color: var(--accent-color);
+    --content-text-color: var(--secondary-color);
+
+    /* Other */
     --main-font: "IBM Plex mono";
-    --cover-image: url(../images/cover-image-light);
+    --cover-image: url(../images/cover-image-dark.png);
+
+    /* Basic vars */
+    --main-color: #fff1f7;
+    --primary-color: #ffc2e6;
+    --secondary-color: #353430;
+    --basic-color: #ff0070;
+    --basic-color-light: #ff8dcb;
+    --main-font: "IBM Plex mono";
+    --cover-image: url(../images/cover-image-dark.png);
 }
