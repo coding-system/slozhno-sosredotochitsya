@@ -22,6 +22,7 @@
     /* Other */
     --main-font: "IBM Plex mono";
     --cover-image: url(../images/cover-image-light.png);
+    --rec-condition: transparent;
 
     /* Basic vars */
     --main: #353430;
@@ -45,7 +46,7 @@
         /* Other */
         --main-font: "IBM Plex mono";
         --cover-image: url(../images/cover-image-light.png);
-        --rec-condition: 
+        --rec-condition: transparent;
 
         /* Basic vars */
         --main: #353430;

@@ -16,6 +16,7 @@
     /* Other */
     --main-font: "IBM Plex mono";
     --cover-image: url(../images/cover-image-dark.png);
+    --rec-condition: var(--accent-color);
 
     /* Basic vars */
     --main: #000028;

@@ -41,16 +41,16 @@
     /* height: 648px !important; */
 }
 
-.rec {
+.rec-element {
     position: absolute;
     right: 28px;
     top: 0;
     z-index: -2;
 }
 
-.rec::before {
+.rec-element::before {
     content: "Rec";
-    color: var(--accent-color);
+    color: var(--rec-condition);
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 18px;
@@ -59,7 +59,7 @@
     text-transform: uppercase;
 }
 
-.rec::after {
+.rec-element::after {
     position: absolute;
     top: 8px;
     right: -19px;
@@ -67,8 +67,8 @@
     height: 9px;
     width: 9px;
     border-radius: 50%;
-    box-shadow: 0 0 4px 2px var(--accent-color);
-    background-color: var(--accent-color);
+    box-shadow: 0 0 4px 2px var(--rec-condition);
+    background-color: var(--rec-condition);
 }
 
 .decorated-zone {
