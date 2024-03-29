@@ -245,13 +245,15 @@
     /* margin-top: 10px; */
     background-color: var(--accent-color);
     font-family: var(--main-font);
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
     color: var(--content-subtitle-color);
 }
 
-.title-special {
+.title-decor {
+    background-color: var(--accent-color);
+    color: var(--slogan-text-color);
     font-weight: 700;
 }
 
@@ -460,14 +462,14 @@
 
     .content__group {
         display: grid;
-        grid-template-columns: 236px minmax(649px, 1fr);
+        grid-template-columns: 236px clamp(649px, 1fr);
         grid-template-rows: auto;
     }
 
     .why-group,
     .how-group {
         display: grid;
-        grid-template-columns: 236px minmax(649px, 1fr);
+        grid-template-columns: minmax(300px, 1fr) minmax(649px, 1fr);
         grid-template-rows: auto;
     }
 
@@ -488,15 +490,13 @@
     } */
 
     .content__text {
-        width: ;
+        /* width: ; */
     }
 
     .pictures__group {
         display: grid;
-        grid-template-columns: 315px 315px 315px;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 260px 315px 428px;
-        /* grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr); */
         grid-template-areas:
             "img__sunset img__sunset img__ice-cream"
             "img__tape img__books img__ice-cream"
