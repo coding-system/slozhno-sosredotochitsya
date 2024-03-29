@@ -9,26 +9,51 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-}
-
-:root .thehe-light {
     /* Colors */
-    --page-bg-color: var(--secondary-color);
-    --main-title-color: var(--primary-color);
-    --accent-color: var(--basic-color);
-    --slogan-text-color: var(--secondary-color);
-    --content-title-color: var(--main-color);
-    --content-subtitle-color: var(--main-color);
-    --content-subtitle-bg-color: var(--basic-color);
-    --content-text-color: var(--main-color);
+    --page-bg-color: var(--secondary);
+    --main-title-color: var(--primary);
+    --accent-color: var(--accent);
+    --slogan-text-color: var(--secondary);
+    --content-title-color: var(--main);
+    --content-subtitle-color: var(--main);
+    --content-subtitle-bg-color: var(--accent);
+    --content-text-color: var(--main);
 
     /* Other */
     --main-font: "IBM Plex mono";
     --cover-image: url(../images/cover-image-light.png);
 
     /* Basic vars */
-    --main-color: #353430;
-    --primary-color: #ffc2e6;
-    --secondary-color: #fff1f7;
-    --basic-color: #ff8dcb;
+    --main: #353430;
+    --primary: #ffc2e6;
+    --secondary: #fff1f7;
+    --accent: #ff8dcb;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* Colors */
+        --page-bg-color: var(--secondary);
+        --main-title-color: var(--primary);
+        --accent-color: var(--accent);
+        --slogan-text-color: var(--secondary);
+        --content-title-color: var(--main);
+        --content-subtitle-color: var(--main);
+        --content-subtitle-bg-color: var(--accent);
+        --content-text-color: var(--main);
+
+        /* Other */
+        --main-font: "IBM Plex mono";
+        --cover-image: url(../images/cover-image-light.png);
+
+        /* Basic vars */
+        --main: #353430;
+        --primary: #ffc2e6;
+        --secondary: #fff1f7;
+        --accent: #ff8dcb;
+    }
+
+    .rec {
+        display: none;
+    }
 }
