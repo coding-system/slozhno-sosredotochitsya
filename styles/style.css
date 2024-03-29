@@ -33,11 +33,10 @@
     /* background-color: #808080; */
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     gap: 65px;
     justify-content: center;
     max-height: 668px;
-    height: fit-content;
     /* height: 648px !important; */
 }
 
@@ -74,7 +73,6 @@
 .decorated-zone {
     height: 100%;
     width: 100%;
-    /* position: relative; */
 }
 
 .decorated-zone::before {
@@ -345,6 +343,8 @@
         justify-content: space-around;
         max-height: 1024px;
         height: fit-content;
+        grid-template-rows: repeat(3);
+        grid-template-columns: 100%;
         gap: 175px;
     }
 
