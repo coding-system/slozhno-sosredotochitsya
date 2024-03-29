@@ -13,22 +13,22 @@
 
 :root .thehe-light {
     /* Colors */
-    --page-bg-color: var(--main-color);
+    --page-bg-color: var(--secondary-color);
     --main-title-color: var(--primary-color);
     --accent-color: var(--basic-color);
-    --slogan-text-color: var(--main-color);
-    --content-title-color: var(--secondary-color);
-    --content-subtitle-color: var(--secondary-color);
+    --slogan-text-color: var(--secondary-color);
+    --content-title-color: var(--main-color);
+    --content-subtitle-color: var(--main-color);
     --content-subtitle-bg-color: var(--basic-color);
-    --content-text-color: var(--secondary-color);
+    --content-text-color: var(--main-color);
 
     /* Other */
     --main-font: "IBM Plex mono";
     --cover-image: url(../images/cover-image-light.png);
 
     /* Basic vars */
-    --main-color: #fff1f7;
+    --main-color: #353430;
     --primary-color: #ffc2e6;
-    --secondary-color: #353430;
+    --secondary-color: #fff1f7;
     --basic-color: #ff8dcb;
 }
