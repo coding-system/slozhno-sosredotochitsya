@@ -2,8 +2,6 @@
 
 .page {
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-    /* inline-size: 375px; */
-    /* position: relative; */
     display: grid;
     gap: 50px;
     grid-template-columns: auto;
@@ -18,16 +16,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* .header {
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr min-content 1fr;
-    grid-template-columns: 100%;
-    gap: 65px;
-    justify-content: center;
-    max-height: 668px;
-} */
 
 .header {
     position: relative;
@@ -163,7 +151,6 @@
 }
 
 .content {
-    /* margin-top: 10px; */
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: auto;
@@ -172,7 +159,6 @@
 
 .content__group {
     width: 100%;
-    /* margin-bottom: 50px; */
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -204,7 +190,6 @@
 .content__item__title {
     min-height: 23px;
     max-height: fit-content;
-    /* margin-top: 10px; */
     background-color: var(--accent-color);
     font-family: var(--main-font);
     font-weight: 400;
@@ -255,7 +240,6 @@
 }
 
 .pictures__group {
-    /* margin-top: 10px; */
     display: grid;
     grid-template-areas:
         "img__sunset"
@@ -290,14 +274,6 @@
     grid-area: img__street;
 }
 
-/* .footer {
-    margin-top: 10px;
-    position: relative;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-} */
-
 .footer__title {
     font-family: var(--main-font), Arial, Helvetica, sans-serif;
     font-weight: 700;
@@ -322,11 +298,10 @@
 
 /* Медиазапросы */
 
-/* @media (min-width: 768px) and (max-width: 1024px)  */
 @media (768px <= width < 1024px) {
     .page {
         padding: 20px;
-        inline-size: 768px;
+        min-width: 768px;
         gap: 80px;
     }
 
@@ -338,10 +313,6 @@
         grid-template-rows: repeat(3);
         grid-template-columns: 100%;
         gap: 63px;
-    }
-
-    .header__theme-menu {
-        /* margin-top: 170px; */
     }
 
     .header__title {
@@ -356,20 +327,8 @@
         justify-self: end;
     }
 
-    /* .content__group {
-        display: grid;
-        grid-template-columns: 236px 472px;
-        grid-template-rows: auto;
-    } */
-
     .content {
-        /* margin-top: 20px; */
         gap: 80px;
-    }
-    .content__group {
-        display: grid;
-        /* grid-template-columns: 100%;
-        grid-template-rows: auto; */
     }
 
     .why-group,
@@ -390,16 +349,6 @@
         width: 236px;
     }
 
-    /* .how-group {
-        display: grid;
-        grid-template-columns: 236px 472px;
-        grid-template-rows: auto;
-    } */
-
-    /* .content__title {
-        width: 236px;
-    } */
-
     .content__text {
         width: clamp(300px, 472px, 1fr);
     }
@@ -412,8 +361,6 @@
         display: grid;
         grid-template-columns: 229px 230px 229px;
         grid-template-rows: 192px 230px 318px;
-        /* grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr); */
         gap: 20px;
         grid-template-areas:
             "img__sunset img__sunset img__ice-cream"
@@ -444,7 +391,7 @@
 @media (1024px <= width) {
     .page {
         padding: 20px;
-        inline-size: 1024px;
+        min-width: 1024px;
         gap: 80px;
     }
 
@@ -482,12 +429,11 @@
     .content {
         gap: 80px;
         margin-top: 0px;
-        /* margin-top: 20px; */
     }
 
     .content__group {
         display: grid;
-        grid-template-columns: 236px clamp(649px, 1fr);
+        grid-template-columns: 236px minmax(649px, 1fr);
         grid-template-rows: auto;
         gap: 20px;
     }
@@ -497,10 +443,6 @@
         display: grid;
         grid-template-columns: minmax(300px, 1fr) minmax(649px, 1fr);
         grid-template-rows: auto;
-    }
-
-    .why-group {
-        /* margin-top: -2px; */
     }
 
     .what-group {
@@ -520,12 +462,6 @@
         grid-template-rows: min-content 400px;
         grid-template-columns: auto;
     }
-
-    /* .how-group {
-        display: grid;
-        grid-template-columns: 236px minmax(649px, 1fr);
-        grid-template-rows: auto;
-    } */
 
     .content__title {
         width: 310px;
