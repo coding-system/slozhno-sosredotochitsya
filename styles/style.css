@@ -4,6 +4,10 @@
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     /* inline-size: 375px; */
     /* position: relative; */
+    display: grid;
+    gap: 40px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     padding: 10px;
     background-color: var(--page-bg-color);
     color: var(--secondary);
@@ -30,14 +34,12 @@
 
 .header {
     position: relative;
-    /* background-color: #808080; */
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
     grid-template-columns: 100%;
     gap: 65px;
     justify-content: center;
     max-height: 668px;
-    /* height: 648px !important; */
 }
 
 .rec-element {
@@ -166,55 +168,19 @@
 }
 
 .content {
-    margin-top: 52px;
+    margin-top: 12px;
+    display: grid;
+    gap: 50px;
 }
 
 .content__group {
     width: 100%;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     gap: 20px;
 }
-
-/* .why-group,
-.what-group,
-.how-group {
-    width: 100%;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 20px;
-} */
-
-/* .why-group {
-    width: 100%;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 20px;
-}
-
-.what-group {
-    width: 100%;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 20px;
-}
-
-.how-group {
-    width: 100%;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 20px;
-} */
 
 .content__text {
     display: grid;
@@ -239,7 +205,8 @@
 }
 
 .content__item__title {
-    max-height: 23px;
+    min-height: 23px;
+    max-height: fit-content;
     /* margin-top: 10px; */
     background-color: var(--accent-color);
     font-family: var(--main-font);
@@ -283,17 +250,22 @@
     outline: 1px solid var(--content-text-color);
 }
 
-/* .pictures {
+.pictures {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-} */
+    gap: 10px;
+}
 
 .pictures__group {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: auto;
+    grid-template-areas:
+        "img__sunset"
+        "img__ice-cream"
+        "img__tape"
+        "img__books"
+        "img__street";
     gap: 10px;
 }
 
@@ -323,7 +295,7 @@
 
 .footer {
     position: relative;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     /* padding-top: 10px; */
     display: grid;
     justify-content: center;
@@ -437,7 +409,7 @@
     }
 }
 
-@media (1024px <= width < 1920px) {
+@media (1024px <= width) {
     .page {
         padding: 20px;
         inline-size: 1024px;
