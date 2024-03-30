@@ -6,7 +6,7 @@
     /* position: relative; */
     padding: 10px;
     background-color: var(--page-bg-color);
-    color: var(--secondary-color);
+    color: var(--secondary);
     font-family: var(--main-font);
     background-image: var(--cover-image);
     background-attachment: fixed;
@@ -263,8 +263,24 @@
     color: var(--content-text-color);
 }
 
-.content__item__link {
+.content__item__text-special {
     text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+.content__item__link {
+    text-decoration: none;
+}
+.content__item__link:hover {
+    border-bottom: solid 1px var(--content-text-color);
+}
+
+.content__item__link:focus {
+    outline: none;
+}
+
+.content__item__link:focus-visible {
+    line-height: 0;
+    outline: 1px solid var(--content-text-color);
 }
 
 /* .pictures {
