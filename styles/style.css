@@ -60,12 +60,6 @@
     background-color: var(--rec-condition);
 }
 
-.decorated-zone {
-    /* padding: 10px; */
-    /* height: 100%;
-    width: 100%; */
-}
-
 .decorated-zone::before {
     position: absolute;
     content: "";
@@ -294,29 +288,41 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    align-self: end;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Медиазапросы */
 
 @media (768px <= width < 1024px) {
     .page {
-        padding: 20px;
+        /* padding: 20px; */
         min-width: 768px;
-        gap: 80px;
+        gap: 40px;
     }
 
     .header {
-        min-height: calc(100vh - 40px);
+        height: 100vh;
+        padding: 20px;
         justify-content: center;
         align-items: center;
         width: 100%;
         grid-template-rows: repeat(3);
         grid-template-columns: 100%;
-        gap: 63px;
+    }
+
+    .rec-element {
+        right: 48px;
+        top: 20px;
+    }
+
+    .decorated-zone::before {
+        top: 20px;
+        right: 20px;
+    }
+
+    .decorated-zone::after {
+        bottom: 20px;
+        left: 20px;
     }
 
     .header__title {
@@ -326,12 +332,12 @@
     }
 
     .header__discription {
-        margin-top: -65px;
         max-width: 364px;
         justify-self: end;
     }
 
     .content {
+        padding: 20px;
         gap: 80px;
     }
 
@@ -339,7 +345,7 @@
     .how-group {
         display: grid;
         justify-content: space-between;
-        grid-template-columns: min-content 472px;
+        grid-template-columns: min-content minmax(472px, 1fr);
         grid-template-rows: auto;
     }
 
@@ -380,11 +386,8 @@
     }
 
     .footer {
-        margin-bottom: -80px;
-        align-self: end;
-        min-height: calc(100vh - 40px);
-        justify-content: center;
-        align-items: center;
+        margin-bottom: -40px;
+        height: 100vh;
     }
 
     .footer__title {
@@ -394,22 +397,37 @@
 
 @media (1024px <= width) {
     .page {
-        padding: 20px;
         min-width: 1024px;
-        gap: 80px;
+        gap: 40px;
     }
 
     .header {
-        min-height: calc(100vh - 40px);
+        height: 100vh;
+        padding: 20px;
         justify-content: center;
         align-items: center;
         gap: 10px;
     }
 
+    .rec-element {
+        right: 48px;
+        top: 20px;
+    }
+
+    .decorated-zone::before {
+        top: 20px;
+        right: 20px;
+    }
+
+    .decorated-zone::after {
+        bottom: 20px;
+        left: 20px;
+    }
+
     .header__theme-menu {
+        margin-top: 0;
         align-self: start;
         justify-self: center;
-        margin-top: 0;
     }
 
     .header__theme-menu-list {
@@ -431,28 +449,28 @@
     }
 
     .content {
+        padding: 20px;
         gap: 80px;
-        margin-top: 0px;
     }
 
     .content__group {
         display: grid;
-        grid-template-columns: 236px minmax(649px, 1fr);
+        grid-template-columns: min-content minmax(649px, 1fr);
         grid-template-rows: auto;
         gap: 20px;
     }
 
-    .why-group,
+    /* .why-group,
     .how-group {
         display: grid;
-        grid-template-columns: minmax(300px, 1fr) minmax(649px, 1fr);
+        grid-template-columns: min-content minmax(649px, 1fr);
         grid-template-rows: auto;
-    }
+    } */
 
     .what-group {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: min-content min-content;
+        grid-template-rows: auto;
     }
 
     .what-group > .content__text {
@@ -463,12 +481,12 @@
 
     .what-group > .content__text > .content__item {
         display: grid;
-        grid-template-rows: min-content 400px;
+        grid-template-rows: min-content 398px;
         grid-template-columns: auto;
     }
 
     .content__title {
-        width: 310px;
+        width: 315px;
     }
 
     .pictures {
@@ -497,9 +515,9 @@
     }
 
     .footer {
-        margin-bottom: -80px;
+        margin-bottom: -40px;
         align-self: end;
-        min-height: calc(100vh - 40px);
+        height: 100vh;
         justify-content: center;
         align-items: center;
     }
