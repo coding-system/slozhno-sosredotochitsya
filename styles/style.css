@@ -9,7 +9,7 @@
     /* padding: 10px; */
     background-color: var(--page-bg-color);
     color: var(--secondary);
-    font-family: var(--main-font);
+    font-family: var(--main-font), Arial, Helvetica, sans-serif;
     background-image: var(--cover-image);
     background-attachment: fixed;
     background-position: center;
@@ -22,7 +22,7 @@
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
     grid-template-columns: 100%;
-    /* min-height: calc(100vh - 20px); */
+    min-height: 668px;
     min-height: 100vh;
     padding: 10px;
     justify-content: center;
@@ -40,7 +40,7 @@
 .rec-element::before {
     content: "Rec";
     color: var(--rec-condition);
-    font-family: var(--main-font);
+    font-family: var(--main-font), Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -101,7 +101,7 @@
     border: transparent;
     background: none;
     text-transform: lowercase;
-    font-family: var(--main-font);
+    font-family: var(--main-font), Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
@@ -140,7 +140,7 @@
     margin-top: -9px;
     background-color: var(--accent-color);
     color: var(--slogan-text-color);
-    font-family: var(--main-font);
+    font-family: var(--main-font), Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
@@ -178,18 +178,18 @@
 }
 
 .content__title {
-    font-family: var(--main-font);
+    font-family: var(--main-font), Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 23.4px;
-    color: var(--accent-color);
+    color: var(--content-title-color);
 }
 
 .content__item__title {
     min-height: 23px;
     max-height: fit-content;
     background-color: var(--accent-color);
-    font-family: var(--main-font);
+    font-family: var(--main-font), Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
@@ -203,19 +203,16 @@
 }
 
 .content__item__text {
-    font-family: var(--main-font);
+    font-family: var(--main-font), Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 23.4px;
     color: var(--content-text-color);
 }
 
-.content__item__text-special {
-    text-shadow: 2px 1px 0 var(--accent-color);
-}
-
 .content__item__link {
     text-decoration: none;
+    text-shadow: 2px 1px 0 var(--accent-color);
 }
 .content__item__link:hover {
     border-bottom: solid 1px var(--content-text-color);
@@ -289,6 +286,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    min-height: 668px;
 }
 
 /* Медиазапросы */

@@ -9,24 +9,23 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-    /* Colors */
-    --page-bg-color: var(--main);
-    --main-title-color: var(--primary);
-    --accent-color: var(--accent);
-    --slogan-text-color: var(--main);
-    --content-title-color: var(--accent);
-    --content-subtitle-color: var(--main);
-    --content-subtitle-bg-color: var(--accent);
-    --content-text-color: var(--secondary);
-
-    /* Other */
-    --main-font: "IBM Plex mono";
-    --cover-image: url(../images/cover-image-dark.png);
-    --rec-condition: var(--accent-color);
-
     /* Basic vars */
     --main: #000028;
     --primary: #db00ff;
     --secondary: #f1b2ce;
     --accent: #ff0070;
+
+    /* Colors */
+    --page-bg-color: #000028;
+    --main-title-color: #db00ff;
+    --accent-color: #ff0070;
+    --slogan-text-color: #000028;
+    --content-title-color: #ff0070;
+    --content-subtitle-color: #000028;
+    --content-subtitle-bg-color: #ff0070;
+    --content-text-color: #f1b2ce;
+
+    /* Other */
+    --cover-image: url(../images/cover-image-dark.png);
+    --rec-condition: #ff0070;
 }

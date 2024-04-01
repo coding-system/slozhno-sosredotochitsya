@@ -9,50 +9,48 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-    /* Colors */
-    --page-bg-color: var(--secondary);
-    --main-title-color: var(--primary);
-    --accent-color: var(--accent);
-    --slogan-text-color: var(--secondary);
-    --content-title-color: var(--main);
-    --content-subtitle-color: var(--main);
-    --content-subtitle-bg-color: var(--accent);
-    --content-text-color: var(--main);
-
-    /* Other */
-    --main-font: "IBM Plex mono";
-    --cover-image: url(../images/cover-image-light.png);
-    --rec-condition: transparent;
-
     /* Basic vars */
     --main: #353430;
     --primary: #ffc2e6;
     --secondary: #fff1f7;
     --accent: #ff8dcb;
+
+    /* Colors */
+    --page-bg-color: #fff1f7;
+    --main-title-color: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --slogan-text-color: #fff1f7;
+    --content-title-color: #353430;
+    --content-subtitle-color: #353430;
+    --content-subtitle-bg-color: #ff8dcb;
+    --content-text-color: #353430;
+
+    /* Other */
+    --cover-image: url(../images/cover-image-light.png);
+    --rec-condition: transparent;
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        /* Colors */
-        --page-bg-color: var(--secondary);
-        --main-title-color: var(--primary);
-        --accent-color: var(--accent);
-        --slogan-text-color: var(--secondary);
-        --content-title-color: var(--main);
-        --content-subtitle-color: var(--main);
-        --content-subtitle-bg-color: var(--accent);
-        --content-text-color: var(--main);
-
-        /* Other */
-        --main-font: "IBM Plex mono";
-        --cover-image: url(../images/cover-image-light.png);
-        --rec-condition: transparent;
-
         /* Basic vars */
         --main: #353430;
         --primary: #ffc2e6;
         --secondary: #fff1f7;
         --accent: #ff8dcb;
+
+        /* Colors */
+        --page-bg-color: #fff1f7;
+        --main-title-color: #ffc2e6;
+        --accent-color: #ff8dcb;
+        --slogan-text-color: #fff1f7;
+        --content-title-color: #353430;
+        --content-subtitle-color: #353430;
+        --content-subtitle-bg-color: #ff8dcb;
+        --content-text-color: #353430;
+
+        /* Other */
+        --cover-image: url(../images/cover-image-light.png);
+        --rec-condition: transparent;
     }
 
     .rec {
