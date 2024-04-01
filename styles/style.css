@@ -3,10 +3,10 @@
 .page {
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     display: grid;
-    gap: 50px;
+    gap: 30px;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    padding: 10px;
+    /* padding: 10px; */
     background-color: var(--page-bg-color);
     color: var(--secondary);
     font-family: var(--main-font);
@@ -22,7 +22,9 @@
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
     grid-template-columns: 100%;
-    min-height: calc(100vh - 20px);
+    /* min-height: calc(100vh - 20px); */
+    min-height: 100vh;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -30,8 +32,8 @@
 
 .rec-element {
     position: absolute;
-    right: 28px;
-    top: 0;
+    right: 38px;
+    top: 10px;
     z-index: -2;
 }
 
@@ -59,8 +61,9 @@
 }
 
 .decorated-zone {
-    height: 100%;
-    width: 100%;
+    /* padding: 10px; */
+    /* height: 100%;
+    width: 100%; */
 }
 
 .decorated-zone::before {
@@ -68,8 +71,8 @@
     content: "";
     height: 25px;
     width: 25px;
-    top: 0px;
-    right: 0px;
+    top: 10px;
+    right: 10px;
     border-top: 1px solid var(--accent-color);
     border-right: 1px solid var(--accent-color);
 }
@@ -79,8 +82,8 @@
     content: "";
     height: 25px;
     width: 25px;
-    bottom: 0px;
-    left: 0px;
+    bottom: 10px;
+    left: 10px;
     border-bottom: 1px solid var(--accent-color);
     border-left: 1px solid var(--accent-color);
 }
@@ -155,6 +158,7 @@
     grid-template-columns: 1;
     grid-template-rows: auto;
     gap: 50px;
+    padding: 10px;
 }
 
 .content__group {
@@ -285,13 +289,13 @@
 }
 
 .footer {
-    margin-bottom: -50px;
+    margin-bottom: -30px;
     position: relative;
     display: grid;
     justify-content: center;
     align-items: center;
     align-self: end;
-    min-height: calc(100vh - 20px);
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
