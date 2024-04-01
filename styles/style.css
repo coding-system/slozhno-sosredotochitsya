@@ -137,7 +137,7 @@
 }
 
 .header__discription {
-    margin-top: -9px;
+    margin-bottom: 9px;
     background-color: var(--accent-color);
     color: var(--slogan-text-color);
     font-family: var(--main-font), Arial, Helvetica, sans-serif;
@@ -186,8 +186,6 @@
 }
 
 .content__item__title {
-    min-height: 23px;
-    max-height: fit-content;
     background-color: var(--accent-color);
     font-family: var(--main-font), Arial, Helvetica, sans-serif;
     font-weight: 400;
