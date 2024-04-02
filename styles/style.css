@@ -110,11 +110,14 @@
 
 .header__theme-menu-button_active {
     outline: 1px solid var(--menu-color);
+    outline-offset: -1px;
+
     pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
-    outline: 1px solid var(--menu-color);
+    outline: 1px solid var(--alternative);
+    outline-offset: -1px;
 }
 
 .header__theme-menu-button:focus {
