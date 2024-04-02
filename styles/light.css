@@ -17,6 +17,8 @@
 
     /* Colors */
     --page-bg-color: #fff1f7;
+    --decorated-color: #353430;
+    --menu-color: #353430;
     --main-title-color: #ffc2e6;
     --accent-color: #ff8dcb;
     --slogan-text-color: #fff1f7;
@@ -40,6 +42,8 @@
 
         /* Colors */
         --page-bg-color: #fff1f7;
+        --decorated-color: #353430;
+        --menu-color: #353430;
         --main-title-color: #ffc2e6;
         --accent-color: #ff8dcb;
         --slogan-text-color: #fff1f7;
